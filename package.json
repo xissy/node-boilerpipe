@@ -1,0 +1,35 @@
+{
+  "name": "boilerpipe",
+  "version": "0.0.1",
+  "author": {
+    "name": "Taeho Kim",
+    "email": "xissysnd@gmail.com"
+  },
+  "main": "lib/index",
+  "dependencies": {
+    "coffee-script": ">= 1.6.3",
+    "async": ">= 0.2.9",
+    "request": ">= 2.21.0",
+    "cheerio": ">= 0.12.0",
+    "java": ">= 0.2.3"
+  },
+  "readmeFilename": "README.md",
+  "description": "A node.js wrapper for Boilerpipe, an excellent Java library for boilerplate removal and fulltext extraction from HTML pages.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xissy/node-boilerpipe.git"
+  },
+  "bugs": {
+    "url": "http://github.com/xissy/node-boilerpipe/issues"
+  },
+  "devDependencies": {
+    "should": ">= 1.0.0",
+    "mocha": ">= 1.3.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script --globals lw --recursive ./test -t 10000"
+  }
+}
