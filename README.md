@@ -17,8 +17,8 @@ Via [npm](https://npmjs.org):
 ## Usage
 
 ### Load in the module
-```coffeescript
-  Boilerpipe = require 'boilerpipe'
+```javascript
+  var Boilerpipe = require('boilerpipe');
 ```
 
 ### Create a new instance
