@@ -110,6 +110,8 @@ class Boilerpipe
 
     if callback?
       @process callback
+      
+    @
 
 
   setHtml: (html, callback) ->
@@ -119,6 +121,8 @@ class Boilerpipe
 
     if callback?
       @process callback
+
+    @
 
 
   checkIsProcessed: (callback) ->
@@ -188,9 +192,13 @@ convertImageJavaObjectsToJs = (imageObjects, callback) ->
             src: (callback) ->
               imageObject.getSrc callback
             width: (callback) ->
-              imageObject.getWidth callback
+              imageObject.getWidth (err, width) ->
+                width = Number width  if width?
+                callback err, width
             height: (callback) ->
-              imageObject.getHeight callback
+              imageObject.getHeight (err, height) ->
+                height = Number height  if height?
+                callback err, height
             alt: (callback) ->
               imageObject.getAlt callback
             area: (callback) ->
