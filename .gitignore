@@ -18,3 +18,6 @@ sftp-config.json
 
 *.un~
 .DS_Store
+
+lib
+
