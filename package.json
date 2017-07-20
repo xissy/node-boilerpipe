@@ -35,6 +35,6 @@
     "build": "coffee -co lib/ src/",
     "prepublish": "coffee -co lib/ src/",
     "postpublish": "rm -rf lib",
-    "test": "mocha --compilers coffee:coffee-script --globals lw --recursive ./test -t 10000"
+    "test": "mocha --compilers coffee:coffee-script/register --globals lw --recursive ./test -t 10000"
   }
 }
