@@ -8,7 +8,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "async": ">= 0.2.9",
-    "java": ">= 0.2.3"
+    "java": "~ 0"
   },
   "readmeFilename": "README.md",
   "description": "A node.js wrapper for Boilerpipe, an excellent Java library for boilerplate removal and fulltext extraction from HTML pages.",

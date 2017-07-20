@@ -1,6 +1,8 @@
 async = require 'async'
 java = require 'java'
 
+java.options.push("-Xss1280k")
+
 java.classpath.push "#{__dirname}/../jar/nekohtml-1.9.13.jar"
 java.classpath.push "#{__dirname}/../jar/xerces-2.9.1.jar"
 java.classpath.push "#{__dirname}/../jar/boilerpipe-core-1.2.0-xissy.jar"
